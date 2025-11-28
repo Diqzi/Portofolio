@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Diqzi Aprialdi | Data Analyst</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'media', 
+            theme: {
+                extend: {
+                    colors: {
+                        slate: {
+                            850: '#1e293b',
+                            900: '#0f172a',
+                            950: '#020617', 
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-200 transition-colors duration-300">
+
+    <header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-sm sticky top-0 z-50 transition-colors duration-300 border-b border-slate-200 dark:border-slate-800">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600 dark:text-blue-500">Diqzi Aprialdi</a>
+            <div class="space-x-8 hidden md:flex font-medium">
+                <a href="#tentang" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Tentang Saya</a>
+                <a href="#proyek" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Proyek</a>
+                <a href="#pengalaman" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Pengalaman</a>
+                <a href="#kontak" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Kontak</a>
+            </div>
+            <a href="#kontak" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-full transition-colors hidden md:inline-block font-medium shadow-md hover:shadow-lg">
+                Hubungi Saya
+            </a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-16 md:py-24">
+        <section class="text-center">
+            <span class="inline-block bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-blue-200 dark:border-blue-800">
+                Available for Work
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight tracking-tight text-slate-900 dark:text-white">
+                Halo, saya <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500 dark:from-blue-400 dark:to-cyan-400">Diqzi Aprialdi</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Lulusan Sistem Informasi dari Universitas Andalas yang tertarik dalam bidang data.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#proyek" class="bg-blue-600 text-white px-8 py-3.5 rounded-full text-lg font-semibold hover:bg-blue-700 hover-lift transition-all shadow-lg hover:shadow-blue-500/30 border border-transparent">
+                    Lihat Proyek Data
+                </a>
+            </div>
+        </section>
+
+        <section id="tentang" class="py-20 md:py-32 scroll-mt-20">
+            <div class="flex flex-col md:flex-row items-center gap-12 lg:gap-20">
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-blue-600 rounded-full blur-3xl opacity-20 animate-pulse"></div>
+                        <img src="Diqzi Aprialdi.JPG" 
+                             alt="Foto Profil Diqzi Aprialdi" 
+                             class="relative w-64 h-64 md:w-80 md:h-80 rounded-full shadow-2xl object-cover border-4 border-white dark:border-slate-800 hover-lift ring-1 ring-slate-900/5">
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-slate-900 dark:text-white">Tentang Saya</h2>
+                    <p class="text-slate-600 dark:text-slate-300 mb-4 leading-relaxed text-lg">
+                        Lulusan Sistem Informasi dari Universitas Andalas dengan spesialisasi dalam Analisis Data dan <em>Business Intelligence</em>. Saya memiliki pengalaman praktis dalam siklus data <em>end-to-end</em>—mulai dari ekstraksi dan pembersihan data (Python), hingga visualisasi interaktif dan pemodelan prediktif.
+                    </p>
+                    <p class="text-slate-600 dark:text-slate-300 mb-8 leading-relaxed text-lg">
+                        Portofolio saya mencakup proyek nyata di industri sebagai syarat menyelesaikan tugas akhir kuliah serta <em>capstone project</em> dari IBM. Saya menggabungkan ketajaman teknis dengan pemahaman bisnis untuk mengubah data mentah menjadi strategi yang berdampak.
+                    </p>
+                    
+                    <h3 class="font-bold text-slate-900 dark:text-white mb-4 uppercase tracking-wider text-sm">Keahlian Utama</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 px-4 py-2 rounded-lg font-medium shadow-sm flex items-center gap-2">
+                            <i data-lucide="file-spreadsheet" class="w-5 h-5 text-green-500"></i> Excel
+                        </span>
+                        <span class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 px-4 py-2 rounded-lg font-medium shadow-sm flex items-center gap-2">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" class="w-5 h-5" alt=""> MySQL
+                        </span>
+                        <span class="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 px-4 py-2 rounded-lg font-medium shadow-sm flex items-center gap-2">
+                            <i data-lucide="bar-chart-2" class="w-5 h-5 text-yellow-500"></i> Power BI
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyek" class="py-20 scroll-mt-20">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-slate-900 dark:text-white">Portofolio Proyek</h2>
+                <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+                    Kumpulan studi kasus yang menunjukkan kemampuan teknis dan pemecahan masalah saya.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg overflow-hidden flex flex-col hover-lift border border-slate-100 dark:border-slate-800 group">
+                    <!-- GANTI src INI DENGAN SCREENSHOT DASHBOARD POWER BI ANDA -->
+                    <div class="h-48 relative overflow-hidden">
+                         <div class="absolute inset-0 bg-yellow-900/20 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img src="ds1.png" 
+                             alt="Power BI Dashboard" 
+                             class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex gap-2 mb-4 flex-wrap">
+                            <span class="bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide border border-yellow-200 dark:border-yellow-800">Power BI</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-yellow-600 dark:group-hover:text-yellow-400 transition-colors">
+                            Dashboard Disdukcapil
+                        </h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 flex-grow text-sm leading-relaxed">
+                            Membuat visualisasi dashboard data layanan administrasi kependudukan, 10 kelompok masalah utama alasan penolakan, serta peramalan pengajuan layanan 2 tahun kedepan.
+                        </p>
+                        <div class="border-t border-slate-100 dark:border-slate-800 pt-4 mt-auto">
+                            <a href="https://app.powerbi.com/view?r=eyJrIjoiODQzNWM3YWQtNzk5OS00ZTA5LTgxZTctNjA2ZWMzZWE0MTk0IiwidCI6IjM0NjI3ODc0LWVkM2EtNDk3Yy04ZmI5LTE2Y2U3ZTk3NjRmMSIsImMiOjEwfQ%3D%3D" target="_blank" class="inline-flex items-center text-teal-600 dark:text-teal-400 font-semibold hover:underline cursor-pointer">
+                                Lihat Dashboard <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg overflow-hidden flex flex-col hover-lift border border-slate-100 dark:border-slate-800 group">
+                    
+                    <div class="h-48 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-teal-900/20 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" 
+                        alt="Data Clustering" 
+                        class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex gap-2 mb-4 flex-wrap">
+                            <span class="bg-teal-100 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide border border-teal-200 dark:border-teal-800">Python</span>
+                            <span class="bg-cyan-400 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide border border-teal-200 dark:border-teal-800">SQL</span>
+                            <span class="bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide border border-green-200 dark:border-green-800">Clustering</span>
+                            <span class="bg-red-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide border border-green-200 dark:border-green-800">Forecasting</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">
+                            ETL, Clustering, dan Forecasting 
+                        </h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 flex-grow text-sm leading-relaxed">
+                            Menggunakan python dan sql untuk proses transformasi data layanan administrasi kependudukan. Melakukan clustering untuk alasan penolakan menggunakan HDBSCAN serta Time Series Forecasting untuk memprediksi beban layanan 2 tahun ke depan.
+                        </p>
+                        <div class="border-t border-slate-100 dark:border-slate-800 pt-4 mt-auto">
+                            <a href="https://github.com/Diqzi/Tugas-Akhir" target="_blank" class="inline-flex items-center text-teal-600 dark:text-teal-400 font-semibold hover:underline">
+                                Lihat Kode <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg overflow-hidden flex flex-col hover-lift border border-slate-100 dark:border-slate-800 group">
+                    <div class="h-48 relative overflow-hidden">
+                        <div class="absolute inset-0 bg-blue-900/20 group-hover:bg-transparent transition-colors z-10"></div>
+                        <img src="image.png" 
+                             alt="Capstone Project" 
+                             class="object-cover w-full h-full transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    
+                    <div class="p-8 flex flex-col flex-grow">
+                        <div class="flex gap-2 mb-4 flex-wrap">
+                            <span class="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide border border-blue-200 dark:border-blue-800">Capstone</span>
+                            <span class="bg-slate-100 dark:bg-yellow-500 text-slate-600 dark:text-slate-300 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide border border-slate-200 dark:border-slate-700">Powr BI</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                            IBM Data Analyst Capstone Project
+                        </h3>
+                        <p class="text-slate-600 dark:text-slate-400 mb-6 flex-grow text-sm leading-relaxed">
+                            Menganalisis tren teknologi dalam pengembangan perangkat lunak dan web di kalangan developer di seluruh dunia.
+                        </p>
+                        <div class="border-t border-slate-100 dark:border-slate-800 pt-4 mt-auto">
+                            <a href="https://coursera-assessments.s3.amazonaws.com/assessments/1762962884312/13a63a7d-a07e-4ba8-a053-b84bb218ae3f/DataAnalystPresentation.pdf" target="_blank" class="inline-flex items-center text-blue-600 dark:text-blue-400 font-semibold hover:underline">
+                                Lihat Studi Kasus <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pengalaman" class="py-20 scroll-mt-20">
+            <div class="max-w-4xl mx-auto bg-white dark:bg-slate-900 rounded-2xl shadow-xl p-8 md:p-12 border border-slate-100 dark:border-slate-800">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 border-b border-slate-100 dark:border-slate-800 pb-6">
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-2">Pengalaman Kerja</h2>
+                        <p class="text-blue-600 dark:text-blue-400 font-semibold text-lg">KKSP PT Semen Padang</p>
+                    </div>
+                    <div class="mt-4 md:mt-0 flex items-center bg-slate-100 dark:bg-slate-800 px-4 py-2 rounded-lg">
+                        <i data-lucide="calendar" class="w-4 h-4 mr-2 text-slate-500 dark:text-slate-400"></i>
+                        <span class="text-slate-700 dark:text-slate-200 font-medium text-sm">Jan 2024 - Feb 2024</span>
+                    </div>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="w-8 h-8 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center text-green-600 dark:text-green-400">
+                                <i data-lucide="check-circle-2" class="w-5 h-5"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 dark:text-white text-lg">Migrasi Sistem Akuntansi</h3>
+                            <p class="text-slate-600 dark:text-slate-400 mt-1">
+                                Membantu dalam proyek migrasi software dari Zahir ke Accurate, memastikan integritas data transaksi dan mengurangi kesalahan input manual.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center text-blue-600 dark:text-blue-400">
+                                <i data-lucide="code-2" class="w-5 h-5"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 dark:text-white text-lg">Pengembangan Aplikasi Internal</h3>
+                            <p class="text-slate-600 dark:text-slate-400 mt-1">
+                                Berinisiatif merancang dan membangun aplikasi absensi berbasis web sederhana yang meningkatkan efisiensi dalam mengajukan cuti.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="w-8 h-8 rounded-full bg-cyan-100 dark:bg-cyan-900/30 flex items-center justify-center text-cyan-600 dark:text-cyan-400">
+                                <i data-lucide="users" class="w-5 h-5"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 dark:text-white text-lg">Training & Sosialisasi</h3>
+                            <p class="text-slate-600 dark:text-slate-400 mt-1">
+                                Melakukan sesi pelatihan dan pendampingan kepada user terkait alur kerja dan fitur pada sebuah sistem baru yang diterapkan (Koota).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="py-20 scroll-mt-20">
+            <div class="max-w-4xl mx-auto bg-blue-700 dark:bg-blue-900 rounded-3xl shadow-2xl overflow-hidden relative border border-blue-600 dark:border-blue-800">
+                
+                <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-white opacity-10 blur-3xl"></div>
+                <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 rounded-full bg-white opacity-10 blur-3xl"></div>
+
+                <div class="p-12 md:p-16 text-center relative z-10">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6"><em>Let's Connect</em></h2>
+                    <p class="text-blue-100 text-lg mb-10 max-w-2xl mx-auto">
+                        Mari diskusikan bagaimana saya dapat membantu tim Anda mengambil keputusan yang lebih baik berbasis data.
+                    </p>
+                    
+                    <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                        <a href="mailto:daprialdi11@gmail.com" class="bg-white text-blue-700 font-bold px-8 py-4 rounded-full shadow-lg hover:bg-slate-100 transition-colors flex items-center gap-3 w-full sm:w-auto justify-center">
+                            <i data-lucide="mail" class="w-5 h-5"></i> daprialdi11@gmail.com
+                        </a>
+                        <a href="https://www.linkedin.com/in/diqzi-aprialdi-38b048302/" target="_blank" class="bg-blue-900 text-white border border-blue-500 font-bold px-8 py-4 rounded-full shadow-lg hover:bg-slate-900 transition-colors flex items-center gap-3 w-full sm:w-auto justify-center">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i> LinkedIn
+                        </a>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-900 py-10 ">
+        <div class="container mx-auto px-6 text-center ">
+            <p class="text-slate-600 dark:text-slate-400 font-medium">
+                &copy; 2025 Diqzi Aprialdi.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
